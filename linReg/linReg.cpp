@@ -31,6 +31,11 @@ float normalDistr(float mean, float stdev){
   return d(gen);
 }
 
+void prepareData(float* x, float* y){
+  for(int j = 0; j < sizeof(x); j++){
+    y[j] = 4*x[j] + 2 + normalDistr(0, .1);
+  }
+}
 float partialW(float x, float y, float f){
   //return -1*(f - y)*x;
   return (f - y)*x;

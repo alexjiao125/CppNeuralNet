@@ -22,6 +22,7 @@ private:
 };
 
 float normalDistr(float, float);
+void prepareData(float*, float*);
 float partialW(float, float, float); //args: x,y,f(x)
 float partialB(float, float);         //args: y,f(x)
 void changeLearnRate(float);
